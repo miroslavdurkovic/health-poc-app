@@ -1,0 +1,24 @@
+//
+//  PlanView.swift
+//  HealthPoCApp
+//
+//  Created by Miroslav Durkovic on 16/07/2023.
+//
+
+import SwiftUI
+
+struct PlanView: View {
+    var body: some View {
+        ZStack {
+            Color.backgroundColor
+                .ignoresSafeArea()
+            Text("Plan View")
+        }
+    }
+}
+
+struct PlanView_Previews: PreviewProvider {
+    static var previews: some View {
+        PlanView()
+    }
+}

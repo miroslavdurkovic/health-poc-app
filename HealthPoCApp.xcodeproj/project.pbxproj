@@ -8,17 +8,39 @@
 
 /* Begin PBXBuildFile section */
 		C9942C1E2A63F93E0097C3BE /* HealthPoCAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9942C1D2A63F93E0097C3BE /* HealthPoCAppApp.swift */; };
-		C9942C202A63F93E0097C3BE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9942C1F2A63F93E0097C3BE /* ContentView.swift */; };
+		C9942C202A63F93E0097C3BE /* MainAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9942C1F2A63F93E0097C3BE /* MainAppView.swift */; };
 		C9942C222A63F93F0097C3BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9942C212A63F93F0097C3BE /* Assets.xcassets */; };
 		C9942C252A63F93F0097C3BE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9942C242A63F93F0097C3BE /* Preview Assets.xcassets */; };
+		C9942C2D2A63FB3E0097C3BE /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9942C2C2A63FB3E0097C3BE /* HomeView.swift */; };
+		C9942C322A63FBB50097C3BE /* MeasurementsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9942C312A63FBB50097C3BE /* MeasurementsView.swift */; };
+		C9942C342A63FBC00097C3BE /* PlanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9942C332A63FBC00097C3BE /* PlanView.swift */; };
+		C9942C362A63FBC80097C3BE /* MoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9942C352A63FBC80097C3BE /* MoreView.swift */; };
+		C9942C3D2A6406880097C3BE /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9942C3C2A6406880097C3BE /* ColorExtension.swift */; };
+		C9CDBFBF2A640C47008EA24B /* HomeViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CDBFBE2A640C47008EA24B /* HomeViewViewModel.swift */; };
+		C9CDBFC12A640C71008EA24B /* HomeViewLocalizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CDBFC02A640C71008EA24B /* HomeViewLocalizable.swift */; };
+		C9CDBFC42A64157A008EA24B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CDBFC32A64157A008EA24B /* User.swift */; };
+		C9CDBFC62A6415C6008EA24B /* BloodPressure.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CDBFC52A6415C6008EA24B /* BloodPressure.swift */; };
+		C9CDBFC82A641A59008EA24B /* HealthDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CDBFC72A641A59008EA24B /* HealthDataStore.swift */; };
+		C9CDBFCA2A641C5B008EA24B /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CDBFC92A641C5B008EA24B /* StringExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C9942C1A2A63F93E0097C3BE /* HealthPoCApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthPoCApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9942C1D2A63F93E0097C3BE /* HealthPoCAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthPoCAppApp.swift; sourceTree = "<group>"; };
-		C9942C1F2A63F93E0097C3BE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C9942C1F2A63F93E0097C3BE /* MainAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAppView.swift; sourceTree = "<group>"; };
 		C9942C212A63F93F0097C3BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C9942C242A63F93F0097C3BE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C9942C2C2A63FB3E0097C3BE /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		C9942C312A63FBB50097C3BE /* MeasurementsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasurementsView.swift; sourceTree = "<group>"; };
+		C9942C332A63FBC00097C3BE /* PlanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanView.swift; sourceTree = "<group>"; };
+		C9942C352A63FBC80097C3BE /* MoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreView.swift; sourceTree = "<group>"; };
+		C9942C3C2A6406880097C3BE /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		C9CDBFBE2A640C47008EA24B /* HomeViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewViewModel.swift; sourceTree = "<group>"; };
+		C9CDBFC02A640C71008EA24B /* HomeViewLocalizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewLocalizable.swift; sourceTree = "<group>"; };
+		C9CDBFC32A64157A008EA24B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		C9CDBFC52A6415C6008EA24B /* BloodPressure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloodPressure.swift; sourceTree = "<group>"; };
+		C9CDBFC72A641A59008EA24B /* HealthDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthDataStore.swift; sourceTree = "<group>"; };
+		C9CDBFC92A641C5B008EA24B /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +73,15 @@
 		C9942C1C2A63F93E0097C3BE /* HealthPoCApp */ = {
 			isa = PBXGroup;
 			children = (
+				C9CDBFC22A64156F008EA24B /* Model */,
+				C9942C372A63FDD20097C3BE /* Common */,
+				C9942C2B2A63FAAC0097C3BE /* Home */,
+				C9942C2E2A63FB8F0097C3BE /* Measurements */,
+				C9942C2F2A63FB990097C3BE /* Plan */,
+				C9942C302A63FBA10097C3BE /* More */,
 				C9942C1D2A63F93E0097C3BE /* HealthPoCAppApp.swift */,
-				C9942C1F2A63F93E0097C3BE /* ContentView.swift */,
+				C9942C1F2A63F93E0097C3BE /* MainAppView.swift */,
+				C9CDBFC72A641A59008EA24B /* HealthDataStore.swift */,
 				C9942C212A63F93F0097C3BE /* Assets.xcassets */,
 				C9942C232A63F93F0097C3BE /* Preview Content */,
 			);
@@ -65,6 +94,58 @@
 				C9942C242A63F93F0097C3BE /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C9942C2B2A63FAAC0097C3BE /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				C9942C2C2A63FB3E0097C3BE /* HomeView.swift */,
+				C9CDBFBE2A640C47008EA24B /* HomeViewViewModel.swift */,
+				C9CDBFC02A640C71008EA24B /* HomeViewLocalizable.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		C9942C2E2A63FB8F0097C3BE /* Measurements */ = {
+			isa = PBXGroup;
+			children = (
+				C9942C312A63FBB50097C3BE /* MeasurementsView.swift */,
+			);
+			path = Measurements;
+			sourceTree = "<group>";
+		};
+		C9942C2F2A63FB990097C3BE /* Plan */ = {
+			isa = PBXGroup;
+			children = (
+				C9942C332A63FBC00097C3BE /* PlanView.swift */,
+			);
+			path = Plan;
+			sourceTree = "<group>";
+		};
+		C9942C302A63FBA10097C3BE /* More */ = {
+			isa = PBXGroup;
+			children = (
+				C9942C352A63FBC80097C3BE /* MoreView.swift */,
+			);
+			path = More;
+			sourceTree = "<group>";
+		};
+		C9942C372A63FDD20097C3BE /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				C9942C3C2A6406880097C3BE /* ColorExtension.swift */,
+				C9CDBFC92A641C5B008EA24B /* StringExtension.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		C9CDBFC22A64156F008EA24B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C9CDBFC32A64157A008EA24B /* User.swift */,
+				C9CDBFC52A6415C6008EA24B /* BloodPressure.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +218,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9942C202A63F93E0097C3BE /* ContentView.swift in Sources */,
+				C9942C2D2A63FB3E0097C3BE /* HomeView.swift in Sources */,
+				C9942C362A63FBC80097C3BE /* MoreView.swift in Sources */,
+				C9CDBFBF2A640C47008EA24B /* HomeViewViewModel.swift in Sources */,
+				C9942C322A63FBB50097C3BE /* MeasurementsView.swift in Sources */,
+				C9942C202A63F93E0097C3BE /* MainAppView.swift in Sources */,
 				C9942C1E2A63F93E0097C3BE /* HealthPoCAppApp.swift in Sources */,
+				C9CDBFC12A640C71008EA24B /* HomeViewLocalizable.swift in Sources */,
+				C9CDBFC62A6415C6008EA24B /* BloodPressure.swift in Sources */,
+				C9942C3D2A6406880097C3BE /* ColorExtension.swift in Sources */,
+				C9CDBFC82A641A59008EA24B /* HealthDataStore.swift in Sources */,
+				C9CDBFC42A64157A008EA24B /* User.swift in Sources */,
+				C9CDBFCA2A641C5B008EA24B /* StringExtension.swift in Sources */,
+				C9942C342A63FBC00097C3BE /* PlanView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,8 +364,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -281,9 +372,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.HealthPoCApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -300,8 +394,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -309,9 +402,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.HealthPoCApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
