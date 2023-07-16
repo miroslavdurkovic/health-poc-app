@@ -48,7 +48,7 @@ class VitalsContainerViewModel: ObservableObject {
             return
         case .bloodPressure:
             // Check if blood pressure is in risk or not, based on https://medlineplus.gov/lab-tests/measuring-blood-pressure/
-            guard let lastResult = self.lastResult as? BloodPressure else { return }
+            guard let lastResult = self.lastResult as? BloodPressureModel else { return }
             latestResultThreshold = checkThresholdForItem(lastResult)
             return
         case .bloodSugar:
@@ -64,7 +64,7 @@ class VitalsContainerViewModel: ObservableObject {
             return .normal
         case .bloodPressure:
             // Check if blood pressure is in risk or not, based on https://medlineplus.gov/lab-tests/measuring-blood-pressure/
-            guard let item = item as? BloodPressure else { return .normal }
+            guard let item = item as? BloodPressureModel else { return .normal }
             if item.systolic > 180 && item.diastolic > 120 {
                 return .critical
             } else if item.systolic > 140 || item.diastolic > 90 {
@@ -81,7 +81,7 @@ class VitalsContainerViewModel: ObservableObject {
         case .temperature:
             return
         case .bloodPressure:
-            guard let data = self.data as? [BloodPressure] else { return }
+            guard let data = self.data as? [BloodPressureModel] else { return }
             let last7Entries = Array(data.suffix(7))
             let dataPoints = last7Entries.enumerated().map { (index, element) in
                 let result = checkThresholdForItem(element)
@@ -131,7 +131,7 @@ class VitalsContainerViewModel: ObservableObject {
         case .temperature:
             return ("", "", "")
         case .bloodPressure:
-            guard let lastResult = self.lastResult as? BloodPressure else { return ("", "", "") }
+            guard let lastResult = self.lastResult as? BloodPressureModel else { return ("", "", "") }
             return ("\(lastResult.systolic)/\(lastResult.diastolic)", "", "")
         case .bloodSugar:
             return ("", "", "")

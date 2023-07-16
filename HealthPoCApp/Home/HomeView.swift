@@ -20,7 +20,9 @@ struct HomeView: View {
                     Text(viewModel.currentUser?.name ?? "nothing there")
 
                     VStack(spacing: 16) {
+                        VitalsContainerView(viewModel: VitalsContainerViewModel(type: .temperature, data: viewModel.currentUser?.temperatureRecords))
                         VitalsContainerView(viewModel: VitalsContainerViewModel(type: .bloodPressure, data: viewModel.currentUser?.bloodPressureRecords))
+                        VitalsContainerView(viewModel: VitalsContainerViewModel(type: .bloodSugar, data: viewModel.currentUser?.bloodSuggarRecords))
                     }
                     .padding(16)
                 }

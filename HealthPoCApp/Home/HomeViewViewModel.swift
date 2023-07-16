@@ -10,6 +10,6 @@ import Foundation
 class HomeViewViewModel: ObservableObject {
     
     var localization: HomeViewLocalizableType = HomeViewLocalization()
-    @Published var currentUser: User?
+    @Published var currentUser: UserModel?
     
 }

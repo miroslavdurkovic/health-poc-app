@@ -44,7 +44,7 @@ struct MainAppView: View {
                     .tabItem {Label(NSLocalizedString("More", comment: ""), systemImage: "ellipsis.circle")}
             }
             .toolbar(.visible, for: .tabBar)
-            .toolbarBackground(Color.primaryColor, for: .tabBar)
+            .toolbarBackground(Color.white, for: .tabBar)
             .environmentObject(dataStore)
         }
         .onAppear() {

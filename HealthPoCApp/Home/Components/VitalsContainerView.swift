@@ -33,84 +33,88 @@ struct VitalsContainerView: View {
                     .bold()
             }
             
-            Divider()
-            
             // last result info bar
-            HStack {
-                VStack(alignment: .leading) {
-                    Text(viewModel.localization.infoTextLatest)
-                        .font(.caption2)
-                        .foregroundColor(viewModel.latestResultValues.textColor)
-                    HStack(alignment: .bottom) {
-                        Text(viewModel.infoData.latest)
-                            .font(.body)
-                            .bold()
-                            .foregroundColor(viewModel.latestResultValues.textColor)
-                        Text(viewModel.unitText)
-                            .font(.caption2)
-                            .foregroundColor(viewModel.latestResultValues.textColor)
-                    }
-                    
-                }
-                Spacer()
-                if !viewModel.infoData.min.isEmpty {
+            if !viewModel.infoData.latest.isEmpty {
+                Divider()
+
+                HStack {
                     VStack(alignment: .leading) {
-                        Text(viewModel.localization.infoTextMin)
-                            .font(.body)
-                            .foregroundColor(.gray)
-                        Text(viewModel.infoData.min)
+                        Text(viewModel.localization.infoTextLatest)
                             .font(.caption2)
-                            .foregroundColor(.gray)
+                            .foregroundColor(viewModel.latestResultValues.textColor)
+                        HStack(alignment: .bottom) {
+                            Text(viewModel.infoData.latest)
+                                .font(.body)
+                                .bold()
+                                .foregroundColor(viewModel.latestResultValues.textColor)
+                            Text(viewModel.unitText)
+                                .font(.caption2)
+                                .foregroundColor(viewModel.latestResultValues.textColor)
+                        }
+                        
                     }
                     Spacer()
-                    VStack(alignment: .leading) {
-                        Text(viewModel.localization.infoTextMax)
-                            .font(.body)
-                            .foregroundColor(.gray)
-                        Text(viewModel.infoData.max)
-                            .font(.caption2)
-                            .foregroundColor(.gray)
+                    if !viewModel.infoData.min.isEmpty {
+                        VStack(alignment: .leading) {
+                            Text(viewModel.localization.infoTextMin)
+                                .font(.body)
+                                .foregroundColor(.gray)
+                            Text(viewModel.infoData.min)
+                                .font(.caption2)
+                                .foregroundColor(.gray)
+                        }
+                        Spacer()
+                        VStack(alignment: .leading) {
+                            Text(viewModel.localization.infoTextMax)
+                                .font(.body)
+                                .foregroundColor(.gray)
+                            Text(viewModel.infoData.max)
+                                .font(.caption2)
+                                .foregroundColor(.gray)
+                        }
                     }
                 }
             }
             
             // Graph Content
-            HStack(alignment: .bottom) {
-                VStack(alignment: .trailing, spacing: 0) {
-                    Group {
-                        Text("180")
-                        Text("150")
-                        Text("120")
-                        Text("90")
-                        Text("60")
-                        Text("30")
-                    }
-                    .frame(height: 30, alignment: .top)
-                    .font(.caption2)
-                }
-                .frame(height: 180)
-                .padding(.bottom, 30)
-                
+            if !viewModel.dataPoints.isEmpty {
                 HStack(alignment: .bottom) {
-                    ForEach(viewModel.dataPoints, id: \.day) { dataPoint in
-                        Spacer()
-                        VStack(alignment: .center) {
-                            Capsule()
-                                .fill(dataPoint.color)
-                                .frame(width: 4, height: dataPoint.systolic - dataPoint.diastolic)
-                                .padding(.top, 180 - dataPoint.systolic)
+                    VStack(alignment: .trailing, spacing: 0) {
+                        Group {
+                            Text("180")
+                            Text("150")
+                            Text("120")
+                            Text("90")
+                            Text("60")
+                            Text("30")
+                        }
+                        .frame(height: 30, alignment: .top)
+                        .font(.caption2)
+                    }
+                    .frame(height: 180)
+                    .padding(.bottom, 30)
+                    
+                    HStack(alignment: .bottom) {
+                        ForEach(viewModel.dataPoints, id: \.day) { dataPoint in
                             Spacer()
-                                .frame(minHeight: 0)
-                            Text(dataPoint.day)
-                                .frame(height: 30, alignment: .bottom)
-                                .font(.caption2)
+                            VStack(alignment: .center) {
+                                Capsule()
+                                    .fill(dataPoint.color)
+                                    .frame(width: 4, height: dataPoint.systolic - dataPoint.diastolic)
+                                    .padding(.top, 180 - dataPoint.systolic)
+                                Spacer()
+                                    .frame(minHeight: 0)
+                                Text(dataPoint.day)
+                                    .frame(height: 30, alignment: .bottom)
+                                    .font(.caption2)
+                            }
                         }
                     }
+                    .frame(height: 210)
+                    
                 }
-                .frame(height: 210)
-
+                .padding(.vertical, 0)
             }
-            .padding(.vertical, 0)
             
             // Warning if neccessery
             if viewModel.latestResultThreshold != .normal {
