@@ -16,8 +16,13 @@ struct HomeView: View {
             ZStack {
                 Color.backgroundColor
                     .ignoresSafeArea()
-                List {
+                ScrollView {
                     Text(viewModel.currentUser?.name ?? "nothing there")
+
+                    VStack(spacing: 16) {
+                        VitalsContainerView(viewModel: VitalsContainerViewModel(type: .bloodPressure, data: viewModel.currentUser?.bloodPressureRecords))
+                    }
+                    .padding(16)
                 }
             }
             .navigationTitle(viewModel.localization.title)

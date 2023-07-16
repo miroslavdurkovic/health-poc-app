@@ -22,6 +22,9 @@
 		C9CDBFC62A6415C6008EA24B /* BloodPressure.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CDBFC52A6415C6008EA24B /* BloodPressure.swift */; };
 		C9CDBFC82A641A59008EA24B /* HealthDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CDBFC72A641A59008EA24B /* HealthDataStore.swift */; };
 		C9CDBFCA2A641C5B008EA24B /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CDBFC92A641C5B008EA24B /* StringExtension.swift */; };
+		C9CDBFCD2A642DF9008EA24B /* VitalsContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CDBFCC2A642DF9008EA24B /* VitalsContainerView.swift */; };
+		C9CDBFCF2A643019008EA24B /* VitalsContainerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CDBFCE2A643018008EA24B /* VitalsContainerViewModel.swift */; };
+		C9CDBFD12A643054008EA24B /* VitalsContainerLocalizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CDBFD02A643054008EA24B /* VitalsContainerLocalizable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +44,9 @@
 		C9CDBFC52A6415C6008EA24B /* BloodPressure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloodPressure.swift; sourceTree = "<group>"; };
 		C9CDBFC72A641A59008EA24B /* HealthDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthDataStore.swift; sourceTree = "<group>"; };
 		C9CDBFC92A641C5B008EA24B /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		C9CDBFCC2A642DF9008EA24B /* VitalsContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VitalsContainerView.swift; sourceTree = "<group>"; };
+		C9CDBFCE2A643018008EA24B /* VitalsContainerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VitalsContainerViewModel.swift; sourceTree = "<group>"; };
+		C9CDBFD02A643054008EA24B /* VitalsContainerLocalizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VitalsContainerLocalizable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,7 @@
 		C9942C2B2A63FAAC0097C3BE /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				C9CDBFCB2A642DBA008EA24B /* Components */,
 				C9942C2C2A63FB3E0097C3BE /* HomeView.swift */,
 				C9CDBFBE2A640C47008EA24B /* HomeViewViewModel.swift */,
 				C9CDBFC02A640C71008EA24B /* HomeViewLocalizable.swift */,
@@ -146,6 +153,16 @@
 				C9CDBFC52A6415C6008EA24B /* BloodPressure.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		C9CDBFCB2A642DBA008EA24B /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				C9CDBFCC2A642DF9008EA24B /* VitalsContainerView.swift */,
+				C9CDBFCE2A643018008EA24B /* VitalsContainerViewModel.swift */,
+				C9CDBFD02A643054008EA24B /* VitalsContainerLocalizable.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,13 +236,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9942C2D2A63FB3E0097C3BE /* HomeView.swift in Sources */,
+				C9CDBFCD2A642DF9008EA24B /* VitalsContainerView.swift in Sources */,
 				C9942C362A63FBC80097C3BE /* MoreView.swift in Sources */,
 				C9CDBFBF2A640C47008EA24B /* HomeViewViewModel.swift in Sources */,
 				C9942C322A63FBB50097C3BE /* MeasurementsView.swift in Sources */,
 				C9942C202A63F93E0097C3BE /* MainAppView.swift in Sources */,
+				C9CDBFD12A643054008EA24B /* VitalsContainerLocalizable.swift in Sources */,
 				C9942C1E2A63F93E0097C3BE /* HealthPoCAppApp.swift in Sources */,
 				C9CDBFC12A640C71008EA24B /* HomeViewLocalizable.swift in Sources */,
 				C9CDBFC62A6415C6008EA24B /* BloodPressure.swift in Sources */,
+				C9CDBFCF2A643019008EA24B /* VitalsContainerViewModel.swift in Sources */,
 				C9942C3D2A6406880097C3BE /* ColorExtension.swift in Sources */,
 				C9CDBFC82A641A59008EA24B /* HealthDataStore.swift in Sources */,
 				C9CDBFC42A64157A008EA24B /* User.swift in Sources */,
