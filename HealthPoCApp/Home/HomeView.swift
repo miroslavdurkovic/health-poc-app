@@ -10,15 +10,13 @@ import SwiftUI
 struct HomeView: View {
     @EnvironmentObject var dataStore: HealthDataStore
     @ObservedObject private var viewModel: HomeViewViewModel = HomeViewViewModel()
-    
+
     var body: some View {
         NavigationView {
             ZStack {
                 Color.backgroundColor
                     .ignoresSafeArea()
                 ScrollView {
-                    Text(viewModel.currentUser?.name ?? "nothing there")
-
                     VStack(spacing: 16) {
                         VitalsContainerView(viewModel: VitalsContainerViewModel(type: .temperature, data: viewModel.currentUser?.temperatureRecords))
                         VitalsContainerView(viewModel: VitalsContainerViewModel(type: .bloodPressure, data: viewModel.currentUser?.bloodPressureRecords))
